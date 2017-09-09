@@ -18,7 +18,7 @@ import java.util.UUID;
  */
 
 public class GUI {
-    public static HashMap<UUID, GUIv2> guis = new HashMap<>();
+    public static HashMap<UUID, GUI> guis = new HashMap<>();
     public static HashMap<UUID, Integer> pageTracker = new HashMap<>();
     public static ArrayList<UUID> ignoreClosing = new ArrayList<>();
 
@@ -26,7 +26,7 @@ public class GUI {
     private ArrayList<ItemStack> items = new ArrayList<>();
     private boolean hidePages = false;
 
-    public GUIv2(String title) {
+    public GUI(String title) {
         this.title = title;
     }
 
